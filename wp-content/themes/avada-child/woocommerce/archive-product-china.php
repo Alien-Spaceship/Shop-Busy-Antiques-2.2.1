@@ -62,7 +62,7 @@ get_header( 'shop' ); ?>
 			<div class="tagcloud">
 			<?php Fusion_Breadcrumbs(); ?>
 			<h4 class="widget-title" data-fontsize="13" data-lineheight="20">Search China by Maker</h4>
-            </div>
+                        </div>
 	
 			<?php woocommerce_product_loop_start(); ?>
 			
