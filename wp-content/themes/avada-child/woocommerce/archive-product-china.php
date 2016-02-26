@@ -58,11 +58,29 @@ get_header( 'shop' ); ?>
 				 */
 				do_action( 'woocommerce_before_shop_loop' );
 			?>
+
+            <?php if ( is_active_sidebar( 'avada-custom-sidebar-busbycustomwidget1' ) ) : ?>	        
+	        <div id="primary-sidebar" class="primary-sidebar widget-area" role="complementary">	   	          	    
+		    <?php dynamic_sidebar( 'avada-custom-sidebar-busbycustomwidget1' ); ?> 	          
+	        </div><!-- #primary-sidebar -->           
+            <?php endif; ?>            
             
-			<div class="tagcloud">
-			<?php Fusion_Breadcrumbs(); ?>
-			<h4 class="widget-title" data-fontsize="13" data-lineheight="20">Search China by Maker</h4>
+            <div class="tagcloud">
+		<?php Fusion_Breadcrumbs(); ?>
             </div>
+            
+            <?php if ( is_active_sidebar( 'avada-custom-sidebar-busbycustomwidget2' ) ) : ?>	        
+	        <div id="primary-sidebar" class="primary-sidebar widget-area" role="complementary">	   	          	    
+		    <?php dynamic_sidebar( 'avada-custom-sidebar-busbycustomwidget2' ); ?> 	          
+	        </div><!-- #primary-sidebar -->           
+            <?php endif; ?>
+            
+            <?php if ( is_active_sidebar( 'avada-custom-sidebar-busbycustomwidget3' ) ) : ?>	        
+	        <div id="primary-sidebar" class="primary-sidebar widget-area" role="complementary">	   	          	    
+		    <?php dynamic_sidebar( 'avada-custom-sidebar-busbycustomwidget3' ); ?> 	          
+	        </div><!-- #primary-sidebar -->           
+            <?php endif; ?>	            
+            
 	
 			<?php woocommerce_product_loop_start(); ?>
 			
@@ -75,6 +93,12 @@ get_header( 'shop' ); ?>
 				<?php endwhile; // end of the loop. ?>
 
 			<?php woocommerce_product_loop_end(); ?>
+			
+            <?php if ( is_active_sidebar( 'avada-custom-sidebar-busbycustomwidget4' ) ) : ?>	        
+	        <div id="primary-sidebar" class="primary-sidebar widget-area" role="complementary">	   	          	    
+		    <?php dynamic_sidebar( 'avada-custom-sidebar-busbycustomwidget4' ); ?> 	          
+	        </div><!-- #primary-sidebar -->           
+            <?php endif; ?>			
 
 			<?php
 				/**
