@@ -66,7 +66,7 @@ get_header( 'shop' ); ?>
             <?php endif; ?>            
             
             <div class="tagcloud">
-			<?php Fusion_Breadcrumbs(); ?>
+		<?php Fusion_Breadcrumbs(); ?>
             </div>
             
             <?php if ( is_active_sidebar( 'avada-custom-sidebar-busbycustomwidget2' ) ) : ?>	        
